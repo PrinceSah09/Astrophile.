@@ -1,8 +1,8 @@
 import React from "react";
-import { TiPin } from "react-icons/ti";
-import { MdDownload } from "react-icons/md";
+import { TiPin } from "react-icons/ti"; 
 import { motion } from "framer-motion";
 import { GiDeathStar } from "react-icons/gi";
+import { GoStarFill } from "react-icons/go";
 
 function Card({ value, reference }) {
   const getBackgroundColor = () => {
@@ -29,9 +29,7 @@ function Card({ value, reference }) {
       <div className="absolute w-6 h-6 text-2xl text-red-600 right-4 top-4 ">
         <TiPin />
       </div>
-
       <p className="pb-10 mt-5 leading-none font-tight"> {value.quote}</p>
-
       <div
         className={`absolute bottom-0 left-0 w-full h-10 px-8  
         ${getBackgroundColor()}`}
@@ -44,12 +42,7 @@ function Card({ value, reference }) {
             {value.writer}
           </div>
           <span className="transition ease-in-out delay-100 hover:text-zinc-800 h-6 w-6 bg-zinc-700 rounded-[100%] flex justify-center items-center cursor-pointer">
-            <a
-              href={`../public/${value.ImgUrl}`}
-              download={`${value.writer} Quote`}
-            >
-              <MdDownload />
-            </a>
+            <GoStarFill />
           </span>
         </div>
       </div>
