@@ -3,6 +3,7 @@ import { TiPin } from "react-icons/ti";
 import { MdDownload } from "react-icons/md";
 import { motion } from "framer-motion";
 import { GiDeathStar } from "react-icons/gi";
+
 function Card({ value, reference }) {
   const getBackgroundColor = () => {
     switch (value.writer) {
@@ -15,10 +16,6 @@ function Card({ value, reference }) {
       default:
         return "bg-orange-800";
     }
-  };
-
-  const dowloadImg = () => {
-    console.log(`1 Clicked!: ${value.ImgUrl}`);
   };
 
   return (
@@ -46,12 +43,11 @@ function Card({ value, reference }) {
             </span>
             {value.writer}
           </div>
-          <span
-            onClick={dowloadImg}
-            className="transition ease-in-out delay-100 hover:text-zinc-800 h-6 w-6 bg-zinc-700 rounded-[100%] flex justify-center items-center cursor-pointer"
-          >
-            <a href={`../public/${value.ImgUrl}`} download>
-              {console.log(`../public/${value.ImgUrl}`)}
+          <span className="transition ease-in-out delay-100 hover:text-zinc-800 h-6 w-6 bg-zinc-700 rounded-[100%] flex justify-center items-center cursor-pointer">
+            <a
+              href={`../public/${value.ImgUrl}`}
+              download={`${value.writer} Quote`}
+            >
               <MdDownload />
             </a>
           </span>

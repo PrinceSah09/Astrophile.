@@ -9,19 +9,19 @@ function Foreground() {
       quote:
         "Every one of us is, in the cosmic perspective, precious. If a human disagrees with you, let him live. In a hundred billion galaxies, you will not find another.",
       writer: "Carl Sagan",
-      ImgUrl: "Feynman1.png",
+      ImgUrl: "Feynman.png",
     },
     {
       quote:
         "For small creatures such as we the vastness is bearable only through love.",
       writer: "Carl Sagan",
-      ImgUrl: "Feynman1.png",
+      ImgUrl: "Feynman.png",
     },
     {
       quote:
         "There’s as many atoms in a single molecule of your DNA as there are stars in the typical galaxy. We are, each of us, a little universe.",
       writer: "Carl Sagan",
-      ImgUrl: "Feynman1.png  ",
+      ImgUrl: "Feynman.png  ",
     },
     {
       quote:
